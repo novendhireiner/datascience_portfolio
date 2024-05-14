@@ -2,7 +2,7 @@
 Willkommen in meinem Data Science Portfolio auf GitHub! Hier präsentiere ich eine Zusammenstellung meiner eigenen Trainingsprojekte und Codebeispiele, die ich im Laufe meiner Data Science-Lernreise erstellt habe. Dieses Portfolio dient nicht nur als Schaufenster meiner Fähigkeiten, sondern auch als Nachweis meines Fortschritts und meiner Erfahrungen in diesem Bereich.
 
 # Inhalt
-Mein Portfolio umfasst verschiedene Projekte und Codebeispiele, die ich während meiner Data Science-Weiterbildung entwickelt habe. Von einfachen Übungen bis hin zu komplexen Projekten decke ich eine Vielzahl von Themen ab, darunter Datenbereinigung und -exploration, maschinelles Lernen, Visualisierungstechniken und mehr. Jedes Projekt wird mit detaillierten Erklärungen und Anleitungen präsentiert, um meine Herangehensweise und meine Fähigkeiten zu veranschaulichen.
+Mein Portfolio umfasst verschiedene Projekte und Codebeispiele, die ich während meiner Weiterbilung als Agile Data Analyst entwickelt habe. Von einfachen Übungen bis hin zu komplexen Projekten decke ich eine Vielzahl von Themen ab, darunter Datenbereinigung und -exploration, maschinelles Lernen, Visualisierungstechniken und mehr. Jedes Projekt wird mit detaillierten Erklärungen und Anleitungen präsentiert, um meine Herangehensweise und meine Fähigkeiten zu veranschaulichen.
 
 # Zielgruppe
 Dieses Portfolio richtet sich an potenzielle Arbeitgeber, Kollegen und die Data Science-Community, die einen Einblick in meine Fähigkeiten und Erfahrungen im Bereich Data Science erhalten möchten. Es soll nicht nur mein Engagement und meine Fähigkeiten demonstrieren, sondern auch als Inspirationsquelle und Lernressource für andere dienen, die sich für Data Science interessieren.
