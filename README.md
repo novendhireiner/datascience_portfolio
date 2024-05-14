@@ -1,5 +1,3 @@
-# Mein Data Science Portfolio auf GitHub
-
 # Beschreibung
 Willkommen in meinem Data Science Portfolio auf GitHub! Hier präsentiere ich eine Zusammenstellung meiner eigenen Trainingsprojekte und Codebeispiele, die ich im Laufe meiner Data Science-Lernreise erstellt habe. Dieses Portfolio dient nicht nur als Schaufenster meiner Fähigkeiten, sondern auch als Nachweis meines Fortschritts und meiner Erfahrungen in diesem Bereich.
 
