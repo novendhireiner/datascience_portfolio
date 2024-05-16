@@ -87,6 +87,8 @@ Anschließend wird eine Liste von 10 Einträgen generiert, indem die `generate_u
 
 Dieses Skript ermöglicht die schnelle Erzeugung von synthetischen Nutzerdaten für Testzwecke oder Demonstrationszwecke und zeigt, wie Python-Bibliotheken wie Faker und Pandas effektiv zusammenarbeiten können, um Daten zu generieren und zu organisieren.
    </p>
+   
+<hr>
 
    #### [Projekt 1 - statistiche Analyse](https://github.com/novendhireiner/datascience_portfolio/blob/main/Python/Projekt%201%20-%20statistiche%20Analyse.py) 
    <p>
