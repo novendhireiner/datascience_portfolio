@@ -21,7 +21,7 @@ Vielen Dank, dass du mein Data Science-Portfolio besuchst! Ich hoffe, dass es di
 * [Python](#Python)
 * [R](#R)
 * [SQL](#SQL)
-* [Business Intelligence](#BusinessIntelligence)
+* [Business Intelligence](#BI)
 
 <hr>
 
@@ -119,8 +119,8 @@ Während des Trainings werden Verluste berechnet und die Gewichte aktualisiert, 
 ## SQL
 <hr>
 
-## Business Intelligence
-#### [Power BI & Tableau](https://1drv.ms/f/s!Am_12dMLxj-qgV3hIg87r66FHuMI?e=RZBlVC) 
+## BI
+#### [Power BI & Tableau](https://github.com/novendhireiner/datascience_portfolio/tree/main/BI) 
    <p>
    In meinem Portfolio für Business Intelligence habe ich zwei beeindruckende Projekte vorgestellt, die die Leistungsfähigkeit von Datenvisualisierungswerkzeugen demonstrieren: Power BI und Tableau. Beide Dateien sind auf einem OneDrive-Link hochgeladen und stehen zur Ansicht zur Verfügung.
 
