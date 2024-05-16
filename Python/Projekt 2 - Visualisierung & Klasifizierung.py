@@ -1,16 +1,3 @@
-# Dieses Skript verwendet Daten aus einer CSV-Datei, die mobile Telefoninformationen enthält, und führt Datensvisualisierung 
-# und Klassifizierung durch. Zuerst werden die Daten eingelesen und dann verschiedene Scatterplots erstellt, um Beziehungen 
-# zwischen verschiedenen Merkmalen zu visualisieren, wie z.B. Batterie-Leistung und interner Speicher, Frontkamera-Megapixel 
-# und Bluetooth, sowie interner Speicher und Frontkamera-Megapixel.
-#
-# Für die Klassifizierung werden die Features und die Zielvariable ausgewählt und die Zielvariable kodiert, um sie für 
-# die Klassifikationsalgorithmen vorzubereiten. Die Features werden standardisiert, um sicherzustellen, dass alle Features 
-# auf die gleiche Skala gebracht werden. Die Daten werden dann in Trainings- und Testdaten aufgeteilt. 
-# Ein k-Nearest-Neighbor-Algorithmus wird initialisiert und mit den Trainingsdaten trainiert. Anschließend werden Vorhersagen 
-# mit den Testdaten durchgeführt, und die Genauigkeit des Algorithmus wird berechnet und ausgegeben. Der Algorithmus wird 
-# mit verschiedenen Algorithmen, einschließlich 'auto', 'kd_tree', 'ball_tree' und 'brute', durchgeführt, um die Leistung 
-# zu vergleichen.
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
