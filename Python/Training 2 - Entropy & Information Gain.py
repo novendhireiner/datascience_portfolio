@@ -1,14 +1,3 @@
-# Der vorliegende Code führt verschiedene Datenanalysen für zwei Tabellenblätter aus einer Excel-Datei durch. Zunächst werden die Daten aus der Excel-Datei 
-# in Pandas DataFrames geladen. Dann wird die Funktion entropy() definiert, um die Entropie zu berechnen, und information_gain(), um den Informationsgewinn 
-# für jedes Feature zu ermitteln. Im ersten Teil des Codes wird der Informationsgewinn für jedes Feature im ersten Tabellenblatt berechnet und ausgegeben. 
-# Im zweiten Teil werden die einzelnen Features mit Bezug auf die Klasse “Draussen Essen” im zweiten Tabellenblatt kategorisiert und der Informationsgewinn 
-# für jedes Feature (Windgeschwindigkeit, Temperatur und Luftfeuchtigkeit) berechnet und ebenfalls ausgegeben. Darüber hinaus werden statistische Analysen 
-# wie Mittelwert, Median, Standardabweichung und Korrelation zwischen verschiedenen Variablen für das zweite Tabellenblatt durchgeführt und ausgegeben.
-#
-# Dieser Code ermöglicht eine umfassende Datenanalyse, indem er den Informationsgewinn für die verschiedenen Features in den beiden Tabellenblättern berechnet 
-# und statistische Kennzahlen sowie Korrelationen zwischen den Variablen im zweiten Tabellenblatt ermittelt. Diese Analysen bieten wertvolle Einblicke in die 
-# Struktur und Beziehungen innerhalb der Daten und können bei der Entscheidungsfindung und der Ableitung von Erkenntnissen helfen.
-
 import numpy as np
 import pandas as pd
 
