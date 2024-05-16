@@ -21,7 +21,7 @@ Vielen Dank, dass du mein Data Science-Portfolio besuchst! Ich hoffe, dass es di
 * [Python](#Python)
 * [R](#R)
 * [SQL](#SQL)
-* [Business Intelligence](#Business Intelligence)
+* [Business Intelligence](#BusinessIntelligence)
 
 <hr>
 
