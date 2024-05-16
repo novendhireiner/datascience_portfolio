@@ -1,17 +1,3 @@
-# Dieses Skript implementiert ein neuronales Netzwerk mit verschiedenen Aktivierungsfunktionen und führt Training und Evaluation 
-# auf einem fiktiven Datensatz durch. Zuerst werden Annahmen über die Daten und Hyperparameter getroffen, einschließlich der 
-# Dimensionen der Eingabe- und Ausgabeschichten, der Lernrate und der Anzahl der Epochen. Trainings- und Testdaten werden 
-# erstellt, wobei Trainingsdaten in einem DataLoader geladen werden, um die Daten in Batches zu verarbeiten. 
-# Die Ground-Truth-Labels werden ebenfalls für die Evaluierung vorbereitet.
-#
-# Die Klasse NeuralNetwork definiert das neuronale Netzwerk mit anpassbaren Aktivierungsfunktionen wie Sigmoid, Leaky ReLU, 
-# PreLU und ELU. Die Methode train_and_evaluate trainiert das Modell unter Verwendung des Kreuzentropieverlusts und 
-# evaluiert es anhand der Genauigkeit auf den Testdaten. Das Training und die Bewertung werden für jedes 
-# Aktivierungsfunktionsszenario durchgeführt und die entsprechenden Genauigkeiten ausgegeben.
-#
-# Dieses Skript bietet einen Einblick in die Leistung verschiedener Aktivierungsfunktionen in neuronalen Netzwerken und zeigt, 
-# wie man mit PyTorch schnell experimentieren und Ergebnisse analysieren kann.
-
 import torch
 import torch.nn as nn
 import torch.optim as optim
