@@ -1,15 +1,3 @@
-# Dieses Skript demonstriert die Datenaufbereitung und -analyse von Gehaltsdaten mithilfe von Pandas und statistischen 
-# Methoden. Zuerst wird eine CSV-Datei mit Gehaltsinformationen eingelesen und anschließend gereinigt, indem NaN-Werte entfernt
-# und Ausreißer, die Gehälter über 150.000 überschreiten, durch den Durchschnitt ersetzt werden. Der bereinigte Datensatz wird
-# dann von Duplikaten befreit. Anschließend werden statistische Kennzahlen wie Modus, Median, Mittelwert und Standardabweichung
-# für die Gehaltsdaten berechnet sowie die Korrelation zwischen Gehalt und Position ermittelt.
-#
-# Das Skript führt auch lineare Regression und Polynomregression bis zum Grad 4 durch, um die Beziehung zwischen Gehalt und 
-# Position (Level) zu untersuchen. Die Steigung und der Y-Achsenabschnitt der linearen Regression werden ausgegeben, während 
-# die Koeffizienten der Polynomregression für verschiedene Grade sowie der mittlere quadratische Fehler für jedes Polynom 
-# visualisiert werden. Dieses Skript bietet eine umfassende Analyse der Gehaltsdaten und ermöglicht es, Trends und Muster 
-# in den Daten zu identifizieren.
-
 import pandas as pd
 import statistics as st
 import numpy as np
