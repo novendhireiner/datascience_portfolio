@@ -1,17 +1,3 @@
-# Dieses Skript implementiert ein neuronales Netzwerk mit einer Input-Schicht von 784 Neuronen, einer Hidden-Schicht 
-# mit 100 Neuronen und einer Output-Schicht mit 10 Neuronen. Es initialisiert Gewichtsmatrizen für die Verbindungen 
-# zwischen den Schichten mit zufälligen Werten. Die Aktivierungsfunktion ist die Sigmoid-Funktion, die verwendet wird, 
-# um die Aktivierung der Neuronen zu berechnen. Die `test`-Funktion nimmt einen Input-Vektor, die Gewichtsmatrizen und 
-# gibt den Output-Vektor des neuronalen Netzwerks zurück. Ein Beispiel-Datensatz wird erstellt, und durch die `test`-Funktion 
-# wird ein Output-Vektor berechnet und ausgegeben. Das Training des neuronalen Netzwerks wird durch die `train`-Funktion 
-# durchgeführt, die die Gewichte zwischen den Schichten basierend auf den Fehlergradienten aktualisiert.
-#
-# Die `train`-Funktion führt eine Rückwärtsdurchlauf-Algorithmus (Backpropagation) durch, um die Gewichte des neuronalen 
-# Netzwerks anzupassen. Sie nimmt eine Liste von Eingangsdaten, die Gewichtsmatrizen, eine Liste von Zielwerten und 
-# eine Lernrate als Eingabe. Die Eingangsdaten werden durch das Netzwerk geleitet, und die Fehler an der Ausgangsschicht 
-# werden berechnet. Die Fehler werden dann zurück in das Netzwerk propagiert, um die Fehler in der Hidden-Schicht zu berechnen. 
-# Schließlich werden die Gewichte zwischen den Schichten aktualisiert, um den Fehler zu reduzieren und das Netzwerk zu trainieren.
-
 import numpy as np
 import numpy
 import scipy
