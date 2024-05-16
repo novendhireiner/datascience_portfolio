@@ -122,7 +122,7 @@ Während des Trainings werden Verluste berechnet und die Gewichte aktualisiert, 
 ## BI
 #### [Power BI & Tableau](https://github.com/novendhireiner/datascience_portfolio/tree/main/BI) 
    <p>
-   In meinem Portfolio für Business Intelligence habe ich zwei beeindruckende Projekte vorgestellt, die die Leistungsfähigkeit von Datenvisualisierungswerkzeugen demonstrieren: Power BI und Tableau. Beide Dateien sind auf einem OneDrive-Link hochgeladen und stehen zur Ansicht zur Verfügung.
+   In meinem Portfolio für Business Intelligence habe ich zwei beeindruckende Projekte vorgestellt, die die Leistungsfähigkeit von Datenvisualisierungswerkzeugen demonstrieren: Power BI und Tableau.
 
 Für Tableau stehen zwei Dateien zur Verfügung: Die erste Datei ist ein Umsatz- und Kostenbericht des Superstore-Datensatzes nach Kategorie, Segment, Produktname und Länderzuordnung. Die zweite Datei präsentiert einen Umsatzbericht mit der Verwendung der Ranglistenfunktion, um Einsichten zu gewinnen.
 
