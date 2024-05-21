@@ -1,15 +1,17 @@
 
-CREATE DATABASE `tpl2_maturbongs`; 
-USE `tpl2_maturbongs`;
+CREATE DATABASE `firma`; 
+USE `firma`;
 
 SET NAMES utf8 ;
 SET character_set_client = utf8mb4 ;
+
 -- Erstellung von Tabelle Abteilung
 CREATE TABLE `Abteilung` (
   `ID` int NOT NULL,
   `Name` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
 );
+
 -- Einfügen von beispieldaten in die Tabelle 'Abteilung'
 INSERT INTO `Abteilung` VALUES (1,'Vertrieb');
 INSERT INTO `Abteilung` VALUES (2,'Marketing');
@@ -24,6 +26,7 @@ CREATE TABLE `Mitarbeiter` (
   PRIMARY KEY (`ID`),
   FOREIGN KEY (`Abteilungs_ID`) REFERENCES `Abteilung`(`ID`)
 );
+
 -- Als Foreign Key in Tabelle Mitarbeiter wird `Abteilungs_ID`festgelegt, 
 -- der auf die `ID`-Spalte der Tabelle `Abteilung` verweist.
 -- Damit steht eine Beziehung zwischen beiden Tabellen
