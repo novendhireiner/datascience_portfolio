@@ -1,5 +1,5 @@
-CREATE DATABASE `tpl4_maturbongs`; 
-USE `tpl4_maturbongs`;
+CREATE DATABASE `universität`; 
+USE `universität`;
 
 -- Erstellung von Tabelle "Studierende"
 CREATE TABLE Studierende (
