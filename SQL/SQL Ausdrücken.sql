@@ -1,5 +1,5 @@
-CREATE DATABASE `tpl3_maturbongs`; 
-USE `tpl3_maturbongs`;
+CREATE DATABASE `firma`; 
+USE `firma`;
 
 -- Erstellung von Tabelle "Kunden"
 CREATE TABLE Kunden (
