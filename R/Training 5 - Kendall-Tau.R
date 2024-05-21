@@ -1,12 +1,10 @@
-# Teilprüfungsleistung 5
-# Aufgabe A
 # Laden des Datensatzes ToothGrowth
 data("ToothGrowth")
 
 # Überprüfen der Struktur des Datensatzes
 str(ToothGrowth)
 
-#Aufgabe B
+
 library(ggplot2)
 # Streudiagramm erstellen
 scatterplot <- ggplot(ToothGrowth, aes(x = dose, y = len)) +
@@ -16,7 +14,6 @@ scatterplot <- ggplot(ToothGrowth, aes(x = dose, y = len)) +
 
 print(scatterplot)
 
-#Aufgabe C
 # Berechnung des Kendall-Tau-Korrelationskoeffizienten
 cor_test_result <- cor.test(ToothGrowth$len, ToothGrowth$dose, method = "kendall")
 
@@ -30,7 +27,6 @@ print(cor_test_result)
 #      tau 
 #0.6959839 
 
-#Aufgabe D
 install.packages("DescTools")
 library(DescTools)
 
