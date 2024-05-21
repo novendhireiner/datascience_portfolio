@@ -17,7 +17,7 @@ penguins <- na.omit(penguins)
 
 ## Define a UI
 ### Typen des UI: Einmal die Fluidpage (die benutzt du 99.9 %)
-### Staticpage: Da musst du alles manuell platzieren
+### Staticpage: Muss alles manuell platzieren
 
 ui <- fluidPage(
 
@@ -51,7 +51,7 @@ ui <- fluidPage(
 
 server <- function(input, output){
 
-  # We create an reactive object
+  # reaktive Objekt ausbauen
 
   #penguin_filter <- reactive(
   #  penguins %>%
