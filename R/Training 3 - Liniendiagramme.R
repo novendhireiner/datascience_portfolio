@@ -1,4 +1,4 @@
-# Teilprüfungsleistung 3(a)
+# Teil A
 # Schritt 1: Laden des Datensatzes "airquality" und Datenreinigung
 data(airquality)
 airquality <- na.omit(airquality) 
@@ -35,7 +35,7 @@ ggplot(airquality, aes(x = Day, y = Ozone)) +
 # Die angepasste x-Achsenbeschriftung mit Hauptgitter und Hilfsgitter erleichtert das Ablesen der Tageswerte und trägt zur besseren Visualisierung bei.
 
 
-# Teilprüfungsleistung 3(b)
+# Teil B
 # Schritt 1: Lade den Datensatz und Datenreinigung
 data(economics)
 economics <- na.omit(economics)
