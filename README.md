@@ -115,9 +115,78 @@ Während des Trainings werden Verluste berechnet und die Gewichte aktualisiert, 
 <hr>
 
 ## R
+#### [Training 1 - Data Management](https://github.com/novendhireiner/datascience_portfolio/blob/main/R/Training%201%20-%20Data%20Management.R)   
+   <p>
+Hier habe ich versucht, Datenmanagement mit R durchzuführen, insbesondere mit den Datensätzen über Spotify-Songs. Die Aufgabe bestand darin, zwei verschiedene Datensätze zu importieren, die verschiedene Informationen über Spotify-Songs enthalten: "Spotify music_data1.xls" mit Songtiteln und Künstlern sowie "Spotify music_data2.xls" mit Charaktereigenschaften der Songs. Der erste Schritt war der Import dieser Datensätze in R und das Speichern in Data Frames namens „spotify1“ und „spotify2“. Anschließend habe ich diese Datensätze zusammengeführt und mich entschieden, die `merge()`-Funktion zu verwenden, da diese für die Kombination von Datensätzen mit unterschiedlichen Charaktereigenschaften am geeignetsten ist.
+
+Nachdem die Datensätze zusammengeführt waren, habe ich verschiedene Teildatensätze erstellt, um spezifische Analysen durchzuführen. Beispielsweise enthält der Datensatz „music1“ die Track-Nummer und bestimmte Eigenschaften wie Acousticness, Instrumentalness, Liveness, Loudness und Speechiness. Ein weiterer Datensatz „music2“ filtert nur Songs von Britney Spears oder Katy Perry. Für „music3“ habe ich Songs mit einer Danceability größer als 0,6 gefiltert, und „music4“ zeigt spezifische Merkmale der Band WALK THE MOON an. Zusätzlich wurde in „music4“ eine neue Variable erstellt, indem Liveness und Loudness multipliziert wurden. Schließlich habe ich fehlende Werte im Gesamt-Datensatz „spotify_gesamt“ identifiziert und ausgeschlossen, um die Analyse zu optimieren. Zum Abschluss wurden die bereinigten Daten in verschiedene Dateiformate exportiert: CSV, TXT und XLSX.
+   </p>
+
+#### [Training 2 - Datenanalyse Diagrammerstellung](https://github.com/novendhireiner/datascience_portfolio/blob/main/R/Training%202%20-%20Datenanalyse%20Diagrammerstellung.R)   
+   <p>
+ich habe eine detaillierte Analyse der Luftqualität anhand des in R verfügbaren Datensatzes "airquality" durchgeführt. Die Aufgabe bestand darin, verschiedene Diagramme zu erstellen und zu interpretieren, um ein besseres Verständnis der Zusammenhänge zwischen Temperatur, Ozonkonzentration und den verschiedenen Monaten zu erlangen. 
+
+<table>
+  <tr>
+    <td align="center">Streudiagramm</td>
+     <td align="center">Balkendiagramm</td>
+     <td align="center">Boxplot</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/Scatterplot.png"></td>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/Balkendiagramm.png"></td>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/Boxplot.png"></td>
+  </tr>
+ </table>
+
+Zunächst habe ich ein Streudiagramm (Scatterplot) erstellt, das die Temperatur (Temp) gegenüber der Ozonkonzentration (Ozone) darstellt und die Punkte nach dem Monat (Month) färbt. Dieses Diagramm zeigt deutlich, dass die Ozonkonzentration tendenziell mit steigender Temperatur zunimmt und diese Beziehung je nach Monat variiert. Durch die farbliche Unterscheidung nach Monaten werden saisonale Muster sichtbar, die auf die Veränderungen der Luftqualität im Jahresverlauf hinweisen.
+
+Des Weiteren habe ich ein Balkendiagramm erstellt, das die durchschnittliche Ozonkonzentration für jeden Monat darstellt. Dieses Diagramm zeigt, dass die durchschnittliche Ozonkonzentration in den Monaten Juli und August tendenziell höher ist als in den anderen Monaten, was auf stärkere Sonneneinstrahlung und höhere Temperaturen in diesen Sommermonaten hinweisen könnte. 
+
+Schließlich habe ich ein Boxplot für die Temperatur (Temp) für jeden Monat erstellt. Dieses Diagramm verdeutlicht die Verteilung der Temperaturwerte und zeigt, dass die Temperaturen in den Monaten Mai bis September variieren, mit einigen Ausreißern in den Monaten Juni und Juli. Insgesamt geben diese Diagramme wertvolle Einblicke in die saisonalen Schwankungen der Luftqualität und die damit verbundenen Umweltbedingungen.
+   </p>
+
+#### [Training 3 - Liniendiagramm](https://github.com/novendhireiner/datascience_portfolio/blob/main/R/Training%203%20-%20Liniendiagramme.R)   
+   <p>
+In diesem Training habe ich eine detaillierte Analyse der Luftqualität anhand des Datensatzes „airquality“ und des Vergleich der Arbeitskraft in den USA von 1967 bis 2015 anhand des "economics"-Datensatzes durchgeführt, wobei ich verschiedene Liniendiagramme mit ggplot2 erstellt und interpretiert habe. 
+     
+Zunächst habe ich den Datensatz „airquality“ in R geladen und fehlende Werte bereinigt. Anschließend habe ich ein einfaches Liniendiagramm erstellt, das den Verlauf der Ozonkonzentration im Laufe der Tage darstellt. Um die Visualisierung zu verbessern, habe ich das Diagramm angepasst, indem ich eine gestrichelte Linie und Datenpunkte hinzugefügt sowie die Achsenbeschriftungen angepasst habe. Die x-Achse wurde durch Haupt- und Hilfsgitterlinien detailliert beschriftet, was die Lesbarkeit und Interpretation der Daten erleichtert.
+<table>
+  <tr>
+    <td align="center">Erstellung</td>
+     <td align="center">Anpassung</td>
+     <td align="center">Verbesserung mit Gitterlinien</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/3a.%20Line%20Diagram%202.png"></td>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/3a.%20Line%20Diagram%203.png"></td>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/3a.%20Line%20Diagram%204.png"></td>
+  </tr>
+ </table>
+
+Die Interpretation der Ergebnisse zeigt, dass die Ozonkonzentration im Laufe der Tage Schwankungen unterliegt, wobei ein klarer Trend schwer zu erkennen ist. Die höchsten Ozonkonzentrationen wurden um den 25. Tag herum beobachtet, während die niedrigsten Konzentrationen um den 21. Tag auftraten. Die gestrichelte Linie und die eingefügten Datenpunkte helfen, den Verlauf und die spezifischen Messwerte der Ozonkonzentration besser nachzuvollziehen. Die angepasste x-Achsenbeschriftung trägt zusätzlich zur besseren Visualisierung bei, indem sie es ermöglicht, die Tageswerte präziser abzulesen und die Entwicklung der Ozonkonzentration im Verlauf des Monats detailliert zu verfolgen. 
+
+Weiteren Teil habe ich die Daten transformiert, um die Anzahl der Erwerbstätigen und Erwerbslosen zu visualisieren. Ich habe das Liniendiagramm so angepasst, dass die Erwerbstätigen und Erwerbslosen in unterschiedlichen Farben und Linienstilen dargestellt werden.
+
+<table>
+  <tr>
+    <td align="center">Erstellung</td>
+     <td align="center">Anpassung</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/3b.%20Line%20Diagramm%203.png"></td>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/3b.%20Line%20Diagramm%204.png"></td>
+  </tr>
+ </table>
+
+Die Visualisierung zeigt, dass die Anzahl der Erwerbstätigen einen aufsteigenden Trend aufweist, während die Anzahl der Erwerbslosen über die Jahre hinweg relativ konstant bleibt, mit einer leichten Zunahme um das Jahr 2009 herum. Durch die Anpassung der Achsenbeschriftungen und die Verwendung von Farben und Linienstilen werden die Trends und Veränderungen in der Arbeitskraft deutlich sichtbar. Die Darstellung der Arbeitskraft in Tausenden erleichtert das Verständnis der Größenordnung der Daten. Insgesamt bietet dieses Diagramm einen klaren Überblick über die Entwicklungen auf dem Arbeitsmarkt in den USA über fast fünf Jahrzehnte hinweg.
+   </p>
+
 <hr>
 
 ## SQL
+
+
 <hr>
 
 ## BI
