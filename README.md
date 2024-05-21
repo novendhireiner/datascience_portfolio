@@ -10,8 +10,7 @@ Dieses Portfolio richtet sich an potenzielle Arbeitgeber, Kollegen und die Data 
 Dieses Portfolio wird regelmäßig aktualisiert, wenn ich neue Projekte und Codebeispiele hinzufüge oder bestehende aktualisiere. Ich bin immer offen für Feedback und Anregungen zur Verbesserung meiner Arbeit. Wenn du Fragen zu meinen Projekten hast oder Vorschläge für zukünftige Projekte hast, zögere nicht, mir eine Nachricht zu senden oder einen Kommentar zu hinterlassen.
 
 # Hinweis
-Bitte beachte, dass die in diesem Portfolio präsentierten Projekte und Codebeispiele ausschließlich meine eigene Arbeit darstellen. Wenn du Teile meines Codes verwenden möchtest, kontaktiere mich bitte [@novendhireiner](www.linkedin.com/in/
-nrmaturbongs), um eine Genehmigung zu erhalten.
+Bitte beachte, dass die in diesem Portfolio präsentierten Projekte und Codebeispiele ausschließlich meine eigene Arbeit darstellen. Wenn du Teile meines Codes verwenden möchtest, kontaktiere mich bitte durch [![Linkedin](https://i.sstatic.net/gVE0j.png) LinkedIn](https://www.linkedin.com/in/nrmaturbongs), um eine Genehmigung zu erhalten.
 
 Vielen Dank, dass du mein Data Science-Portfolio besuchst! Ich hoffe, dass es dir gefällt und dir einen Einblick in meine Arbeit und meine Leidenschaft für Data Science bzw. Analyse gibt.
 
