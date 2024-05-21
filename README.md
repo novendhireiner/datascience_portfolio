@@ -182,6 +182,86 @@ Weiteren Teil habe ich die Daten transformiert, um die Anzahl der Erwerbstätige
 Die Visualisierung zeigt, dass die Anzahl der Erwerbstätigen einen aufsteigenden Trend aufweist, während die Anzahl der Erwerbslosen über die Jahre hinweg relativ konstant bleibt, mit einer leichten Zunahme um das Jahr 2009 herum. Durch die Anpassung der Achsenbeschriftungen und die Verwendung von Farben und Linienstilen werden die Trends und Veränderungen in der Arbeitskraft deutlich sichtbar. Die Darstellung der Arbeitskraft in Tausenden erleichtert das Verständnis der Größenordnung der Daten. Insgesamt bietet dieses Diagramm einen klaren Überblick über die Entwicklungen auf dem Arbeitsmarkt in den USA über fast fünf Jahrzehnte hinweg.
    </p>
 
+#### [Training 4 - ANOVA für abhängige Stichprobe](https://github.com/novendhireiner/datascience_portfolio/blob/main/R/Training%204%20-%20ANOVA.R)   
+   <p>
+in diesem Training habe ich den Datensatz von Orthodont analisiert, der Daten über die Veränderung einer kieferorthopädischen Messung im Laufe der Zeit für 27 Kinder enthält. Die deskriptive Analyse zeigte, dass der Abstand zwischen der Hypophyse und der Pterygomaxillarspalte mit dem Alter tendenziell zunimmt. Die Berechnung der Mittelwerte und Standardabweichungen der Messungen für verschiedene Altersgruppen sowie die Erstellung von Boxplots halfen, diese Veränderung zu visualisieren und zu interpretieren. 
+<table>
+  <tr>
+    <td align="center">Boxplot</td>
+     <td align="center">QQ-Plot</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/4A.%20Boxplot.png"></td>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/4B.2.%20QQ-Plot.png"></td>
+  </tr>
+ </table>
+Die Boxplots zeigten, dass die Verteilung der Messungen über die Altersgruppen hinweg relativ konsistent war, mit einem klaren Anstieg des mittleren Abstands von 8 bis 14 Jahren.
+
+Zur Überprüfung der Voraussetzungen für die ANOVA mit Messwiederholungen wurden mehrere Tests durchgeführt. Die Identifizierung von Ausreißern ergab, dass es insgesamt sechs Ausreißer gab, die jedoch nicht extrem waren. Die Normalverteilung der Daten innerhalb jedes Messzeitpunkts wurde durch QQ-Plots bestätigt, die zeigten, dass die Verteilungen ungefähr normal waren. 
+
+Die Überprüfung der Sphärizität mittels Mauchly's Test ergab, dass die Sphärizitätsannahme erfüllt war (p = 0.233).
+```
+Effect     W     p p<.05
+1    age 0.758 0.233 
+```
+Die anschließende ANOVA mit Messwiederholungen zeigte signifikante Unterschiede zwischen den Messzeitpunkten (p < 0.05). 
+```
+ANOVA Table (type III tests)
+  Effect DFn DFd     F        p p<.05   pes
+1    age   3  78 38.04 2.99e-15     * 0.594
+```
+
+Post-hoc-Tests bestätigten, dass die Messungen zwischen fast allen Altersgruppen signifikant variierten, mit Ausnahme der Altersgruppen 8 und 10. Diese Ergebnisse zeigen, dass das Wachstum der gemessenen Distanz über die Jahre signifikante Veränderungen aufweist, was wichtige Implikationen für das Verständnis des kieferorthopädischen Wachstums bei Kindern hat.
+```
+       .y. group1 group2 n1 n2 statistic df        p    p.adj p.adj.signif
+1 distance      8     10 27 27 -2.547017 26 1.70e-02 1.03e-01           ns
+2 distance      8     12 27 27 -6.309715 26 1.11e-06 6.66e-06         ****
+3 distance      8     14 27 27 -8.656874 26 3.90e-09 2.34e-08         ****
+4 distance     10     12 27 27 -3.486636 26 2.00e-03 1.10e-02            *
+5 distance     10     14 27 27 -8.440819 26 6.38e-09 3.83e-08         ****
+6 distance     12     14 27 27 -4.196573 26 2.80e-04 2.00e-03           **
+
+```
+   </p>
+
+#### [Training 5 - Kendall-Tau Koeefizientkorrelation](https://github.com/novendhireiner/datascience_portfolio/blob/main/R/Training%205%20-%20Kendall-Tau.R)   
+   <p>
+In dieserm Training untersuchte ich die Korrelation zwischen der Dosis von Vitamin C und der Zahnwachstumsrate bei Meerschweinchen mithilfe des Kendall-Tau-Korrelationskoeffizienten. Der Datensatz "ToothGrowth" wurde zunächst geladen und die Struktur mit der Funktion str() überprüft, um ein Verständnis für die enthaltenen Variablen zu erlangen. Anschließend wurde ein Streudiagramm erstellt, das die Beziehung zwischen der Dosis von Vitamin C und der Zahnwachstumsrate visualisiert. Dies ermöglichte eine erste visuelle Einschätzung, ob es eine Beziehung zwischen diesen beiden Variablen gibt. 
+     
+<table>
+  <tr>
+    <td align="center">Streudiagramm</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/5B.%20Scatterplot.png"></td>
+  </tr>
+ </table>
+Die grafische Darstellung zeigte eine positive Korrelation, was darauf hindeutete, dass höhere Dosen von Vitamin C tendenziell mit einer größeren Zahnwachstumsrate verbunden sind.
+
+Um diese visuelle Einschätzung zu quantifizieren, wurde der Kendall-Tau-Korrelationskoeffizient berechnet. Das Ergebnis zeigte einen Koeffizienten von 0.696 mit einem äußerst signifikanten p-Wert von 7.896e-12. Dies deutet auf eine starke positive Korrelation hin, bei der höhere Dosen von Vitamin C zu einer größeren Zahnwachstumsrate führen. Zur weiteren Bestätigung der Signifikanz dieser Korrelation wurde ein 95%-Konfidenzintervall berechnet, das von 0.619 bis 0.773 reicht. Da dieses Intervall keine Null umfasst, kann mit hoher Sicherheit gesagt werden, dass eine positive Korrelation zwischen den Variablen besteht. Diese Ergebnisse unterstützen die Hypothese, dass Vitamin C einen positiven Einfluss auf die Zahnwachstumsrate bei Meerschweinchen hat.
+   </p>
+
+#### [Training 6 - Ordinal logistische Regression](https://github.com/novendhireiner/datascience_portfolio/blob/main/R/Training%206%20-%20Ordinal%20logistische%20Regression.R)   
+   <p>
+Hier wurde der Zusammenhang zwischen verschiedenen chemischen Eigenschaften von Weinen und ihrer Qualitätsstufe mittels ordinaler logistischer Regression untersucht. Zunächst wurde der "wine"-Datensatz aus dem "rattle"-Paket geladen und eine deskriptive Statistik durchgeführt, um grundlegende Informationen über die enthaltenen Variablen zu gewinnen. Insbesondere wurden der Alkoholgehalt, der Magnesiumgehalt und die Farbintensität als unabhängige Variablen ausgewählt, um deren Einfluss auf die Qualitätsstufe der Weine, dargestellt durch die Variable "Type", zu analysieren. Um sicherzustellen, dass die Voraussetzungen für eine lineare Regression erfüllt sind, wurde die Multikollinearität der unabhängigen Variablen überprüft. Die berechneten Variance Inflation Factors (VIF) lagen alle unter dem kritischen Wert von 5, was auf eine geringe Multikollinearität hinweist.
+
+Anschließend wurde ein ordinal logistisches Regressionsmodell erstellt, das die Weintypen als abhängige Variable und die chemischen Eigenschaften Alkohol, Magnesium und Farbe als unabhängige Variablen verwendete. Die Ergebnisse des Modells zeigten, dass alle drei Prädiktoren signifikante Einflussgrößen sind, wobei der Alkoholgehalt und der Magnesiumgehalt negativ und die Farbintensität positiv mit der Qualitätsstufe korrelieren. Der Likelihood-Quotient-Chi-Quadrat-Test ergab eine hohe Signifikanz (p < 0.0001), was darauf hinweist, dass das Modell mit den Prädiktoren besser geeignet ist als ein Nullmodell ohne diese Prädiktoren. Das Modell erreichte ein Nagelkerke R-Quadrat von 0.472, was auf eine gute Modellgüte hinweist. Die Odds-Ratios zeigten, dass eine Erhöhung der Farbintensität um eine Einheit die Wahrscheinlichkeit einer höheren Qualitätsstufe um das 2.19-fache erhöht, während höhere Werte für Alkohol und Magnesium die Wahrscheinlichkeit einer höheren Qualitätsstufe senken. Diese Erkenntnisse können genutzt werden, um die chemischen Eigenschaften von Weinen besser zu verstehen und die Produktionsprozesse sowie die Auswahl von Weinen für den Verkauf zu optimieren.
+   </p>
+
+#### [Projekt 1 - Shiny App](https://github.com/novendhireiner/datascience_portfolio/blob/main/R/Projekt%201%20-%20Shiny%20App.R)   
+   <p>
+In diesem Projekt habe ich versucht, eine interaktive Shiny-Anwendung zur Analyse des "palmerpenguins"-Datensatzes aufzubauen. Die Anwendung ermöglicht es den Benutzern, die Flossenlänge von Pinguinen zu visualisieren und zu filtern. Der Datensatz "penguins" wurde zuerst bereinigt, indem fehlende Werte entfernt wurden, um eine vollständige Analyse zu gewährleisten. Die Benutzeroberfläche (UI) der Anwendung ist mit fluidPage gestaltet, die eine Titelzeile und ein Hauptfeld enthält, in dem ein Boxplot dargestellt wird. Ein seitliches Bedienfeld bietet einen Schieberegler, mit dem Benutzer die Pinguine basierend auf der Flossenlänge filtern können. Dies ermöglicht eine dynamische und intuitive Untersuchung der Daten.
+
+Im Server-Teil der Anwendung wird eine reaktive Funktion verwendet, um die Pinguindaten basierend auf den Benutzereingaben im Schieberegler zu filtern. Der gefilterte Datensatz wird dann verwendet, um einen Boxplot zu erstellen, der die Flossenlänge der Pinguine nach Art darstellt. Der Boxplot wird in Echtzeit aktualisiert, wenn der Benutzer die Filtereinstellungen anpasst. Diese interaktive Visualisierung hilft, Unterschiede in der Flossenlänge zwischen den Pinguinarten zu erkennen und bietet eine benutzerfreundliche Möglichkeit, die Daten zu erkunden. Durch die Kombination von Shiny und ggplot2 wird eine leistungsstarke und flexible Plattform zur Datenvisualisierung geschaffen, die sowohl für Bildungs- als auch für Forschungszwecke genutzt werden kann.
+<table>
+  <tr>
+    <td align="center">Shiny App UI</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/Shiny%20App%20UI.png"></td>
+  </tr>
+ </table>
+   </p>
 <hr>
 
 ## SQL
