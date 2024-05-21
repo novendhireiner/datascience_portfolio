@@ -265,7 +265,35 @@ Im Server-Teil der Anwendung wird eine reaktive Funktion verwendet, um die Pingu
 <hr>
 
 ## SQL
+#### [Training 1 - Erstellung der Datenbank](https://github.com/novendhireiner/datascience_portfolio/blob/main/SQL/Training%201%20-%20Datenbank.sql)   
+   <p>
+Auf dieses Skript befindet sich eine umfassende Lösung zur Erstellung und Verwaltung von zwei Tabellen für eine fiktive Firma: "Mitarbeiter" und "Abteilung". Das Ziel dieser Aufgabe ist es, eine robuste Datenbankstruktur zu entwerfen, die durch den Einsatz von Primärschlüsseln, Fremdschlüsseln, Indizes und Views effiziente und konsistente Datenverwaltung ermöglicht. Die Tabelle "Mitarbeiter" enthält die Spalten "ID", "Name" und "Abteilungs_ID", während die Tabelle "Abteilung" die Spalten "ID" und "Name" umfasst. Primärschlüssel werden für beide Tabellen festgelegt, um eindeutige Identifikatoren zu gewährleisten. Durch die Definition eines Fremdschlüssels in der Tabelle "Mitarbeiter", der auf die "ID" der Tabelle "Abteilung" verweist, wird eine relationale Verknüpfung hergestellt, die Datenintegrität und referenzielle Integrität sicherstellt.
 
+Das beigefügte SQL-Skript demonstriert die Erstellung der Tabellen und das Einfügen von Beispieldaten. Die Wahl der Datentypen basiert auf den spezifischen Anforderungen jeder Spalte: "int" für numerische Identifikatoren und "varchar(255)" für textbasierte Namen. Diese Auswahl stellt sicher, dass die Tabellen sowohl flexibel als auch skalierbar sind. Die Beziehung zwischen den Tabellen wird durch den Fremdschlüssel "Abteilungs_ID" in der Tabelle "Mitarbeiter" realisiert, der auf die "ID" der Tabelle "Abteilung" verweist. Diese Struktur ermöglicht es, die Abteilungszugehörigkeit jedes Mitarbeiters effizient zu verfolgen. Optional können zusätzliche INSERT-Anweisungen verwendet werden, um die Funktionalität der Tabellen mit realistischen Beispieldaten zu demonstrieren, wodurch die Praktikabilität und Benutzerfreundlichkeit der Datenbanklösung verdeutlicht wird.
+   </p>
+
+#### [Training 2 - SQL-Ausdrücken](https://github.com/novendhireiner/datascience_portfolio/blob/main/SQL/Training%202%20-%20SQL%20Ausdrücken.sql)   
+   <p>
+In diesem Training präsentiere ich eine praxisorientierte Aufgabe zur Anwendung von SQL-Ausdrücken in einer Datenbank. Die Aufgabe besteht darin, zwei Tabellen für eine fiktive Firma zu erstellen: "Kunden" und "Bestellungen". Die Tabelle "Kunden" enthält die Spalten "KundenID", "Name" und "Land", während die Tabelle "Bestellungen" die Spalten "BestellID", "KundenID", "Produkt" und "Preis" umfasst. Nach der Erstellung der Tabellen werden einige Datensätze in beide Tabellen eingefügt, um eine realistische Datengrundlage zu schaffen. Im Anschluss wird eine SQL-Abfrage ausgeführt, um alle Kunden aus einem bestimmten Land, beispielsweise Deutschland, anzuzeigen.
+
+Diese Aufgabe illustriert die grundlegenden Konzepte der relationalen Datenbankgestaltung, wie die Definition von Primär- und Fremdschlüsseln sowie das Einfügen von Beispieldaten. Der SQL-Code zeigt die Erstellung der Datenbank und Tabellen, das Einfügen von Datensätzen und die Ausführung einer Abfrage, um spezifische Informationen abzurufen. Diese Struktur ermöglicht es, die Beziehungen zwischen Kunden und ihren Bestellungen zu verwalten und gezielte Datenabfragen durchzuführen, die wertvolle Einblicke in die Kundenbasis und deren Bestellverhalten bieten. Die Aufgabe demonstriert die Effizienz und Flexibilität von SQL bei der Verwaltung und Analyse von Unternehmensdaten.
+   </p>
+
+#### [Training 3 - ER-Diagram]()   
+   <p>
+hier stelle ich eine Aufgabe vor, die sich mit der Erstellung und Verwaltung von Datenbanktabellen auf Basis eines ER-Diagramms befasst. 
+<table>
+  <tr>
+    <td align="center">ER-Diagramm</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/SQL/3.%20ER-Diagramm.png"></td>
+  </tr>
+ </table>
+Ziel der Aufgabe ist es, SQL-Anweisungen zu schreiben, um drei Tabellen zu erstellen: "Studierende", "Kurse" und "Einschreibungen". Diese Tabellen repräsentieren die Beziehungen zwischen Studierenden und den Kursen, in die sie eingeschrieben sind. Die Tabelle "Studierende" enthält die Spalten "Matrikelnummer", "Name" und "Email". Die Tabelle "Kurse" umfasst die Spalten "KursID", "Titel" und "Dozent". Die Verknüpfung zwischen diesen beiden Tabellen erfolgt über die Tabelle "Einschreibungen", die die Spalten "Matrikelnummer", "KursID" und "Semester" enthält. Nach der Erstellung der Tabellen werden einige Beispieldatensätze eingefügt, um die Funktionalität zu demonstrieren. Abschließend wird eine SELECT-Anweisung ausgeführt, die alle Studierenden und die von ihnen belegten Kurse anzeigt.
+
+Diese Aufgabe illustriert die grundlegenden Konzepte der relationalen Datenbankmodellierung, einschließlich der Definition von Primär- und Fremdschlüsseln, der Dateneingabe und der Ausführung komplexer Abfragen. Durch die klare Struktur und die sorgfältige Gestaltung der Datenbanktabellen wird eine effiziente Verwaltung und Abfrage der Daten ermöglicht. Die bereitgestellten SQL-Skripte zeigen, wie man Datenbanken erstellt, Daten einfügt und Abfragen formuliert, um spezifische Informationen abzurufen. Diese Techniken sind essenziell für die Verwaltung von Studierenden- und Kursinformationen in einer universitären Umgebung und können leicht auf andere Anwendungsfälle übertragen werden.
+   </p>
 
 <hr>
 
