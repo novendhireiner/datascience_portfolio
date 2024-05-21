@@ -1,4 +1,4 @@
-# Aufgabe A
+# Teil A
 library(dplyr)
 library(rstatix)
 data("Orthodont")
@@ -27,11 +27,11 @@ boxplot_plot <- ggplot(Orthodont, aes(x = factor(age), y = distance)) +
 
 print(boxplot_plot)
 
-# Interpretation Aufgabe A
+# Interpretation Teil A
 # Auf der Boxplot zeigt sich an, dass die Abstand zwischen der Hypophyse und der Pterygomaxillarspalte
 # von der Probanden zwischen dem Alter 8 bis 14 steigt.
 
-# Aufgabe B
+# Teil B
 # 1. Überprüfung auf Ausreißer
 Orthodont %>%
 group_by(age) %>%
@@ -52,15 +52,13 @@ library(ggpubr)
 ggqqplot(Orthodont, "distance", facet.by = "age")+
   ggtitle("QQ-Plot für Verteilung der Abstand je nach Altersgruppe")
 
-# 3. Prüfung der Sphärizität wird in aufgabe C bearbeitet
-
-# Interpretation Aufgabe B
+# Interpretation Teil B
 # B.1. Es gibt insgesamt 6 Ausreißer (3 von Age 8, 2 von Age 12 und 1 von Age 14)
 # B.2. Auf dem QQ-Plot sind die Abstand (distance) von aller Alter in etwa normal verteilt.
 
 
 
-# Aufgabe C
+# Teil C
 rep_anova <- anova_test(data = Orthodont, dv = distance, wid =Subject,
                         within = age, effect.size = "pes")
 
@@ -89,7 +87,7 @@ as.data.frame()
 #5 distance     10     14 27 27 -8.440819 26 6.38e-09 3.83e-08         ****
 #6 distance     12     14 27 27 -4.196573 26 2.80e-04 2.00e-03           **
 
-#Interpretation Aufgabe C
+#Interpretation Teil C
 # 1. Der p-Wert = 2.99e-15 ist sehr klein und liegt unter dem Alpha-Niveau von 0.05
 #    Deshalb kann H0-Hypothese von Gleichheit der Messwerte zwischen den Alter verworfen werden
 # 2. Bei den Post-hoc-Tests ist erkennbar, dass sich zwischen der Altersgruppe jeweils 
