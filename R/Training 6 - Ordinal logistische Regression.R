@@ -1,4 +1,3 @@
-# Aufgabe A
 # Wine-Daten laden
 #install.packages("rattle")
 library(rattle)
@@ -8,13 +7,11 @@ data(wine)
 # Deskriptive Statistik
 summary(wine)
 
-# Aufgabe B
 # Multikollinearität vom Linearregression Modell
 lrmodel <- lm(Type ~ Alcohol + Magnesium + Color, data = wine)
 # VIF Berechnung
 vif(lrmodel)
 
-# Aufgabe C
 # Multikolliniearität Untersuchung
 #install.packages("rms")
 library(rms)
