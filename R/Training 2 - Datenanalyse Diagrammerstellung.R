@@ -1,4 +1,3 @@
-#Aufgabe A:
 #Scatterplot:
 library(ggplot2)
 
@@ -13,7 +12,6 @@ ggplot(airquality, aes(x = Temp, y = Ozone, color = factor(Month))) +
 #Interpretation:
 #je höher die Temperatur ist, desto höhere die Ozonkonzentration ist. Es wird je nach Monat variiert.
 
-#Aufgabe B:
 #Balkendiagramm:
 #den Durchschnitt der Ozonkonzentration pro Monat
 average_ozone <- aggregate(Ozone ~ Month, data = airquality, FUN = mean)
@@ -27,8 +25,6 @@ ggplot(average_ozone, aes(x = factor(Month), y = Ozone)) +
 #Interpretation:
 #Die durchschnittliche Ozonkonzentration im Monat 7 und 8 tendeziell höher als andere Monat.
 
-
-#Aufgabe C:
 #Boxplot:
 ggplot(airquality, aes(x = factor(Month), y = Temp)) +
   geom_boxplot(fill = "blue") +
