@@ -6,8 +6,8 @@ library(readxl)
 library(dplyr)
 
 # Datensätze importieren
-spotify1 <- read_excel("Teilprüfungsleistung 1/Spotify music_data1.xlsx")
-spotify2 <- read_excel("Teilprüfungsleistung 1/Spotify music_data2.xlsx")
+spotify1 <- read_excel("Spotify music_data1.xlsx")
+spotify2 <- read_excel("Spotify music_data2.xlsx")
 
 
 # Datensätze zusammenfügen
