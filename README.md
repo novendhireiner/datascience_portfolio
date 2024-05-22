@@ -248,7 +248,7 @@ In dieserm Training untersuchte ich die Korrelation zwischen der Dosis von Vitam
     <td align="center">Streudiagramm</td>
   </tr>
   <tr>
-    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/5B.%20Scatterplot.png"></td>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/5B.%20Scatterplot.png" width="600"></td>
   </tr>
  </table>
 Die grafische Darstellung zeigte eine positive Korrelation, was darauf hindeutete, dass höhere Dosen von Vitamin C tendenziell mit einer größeren Zahnwachstumsrate verbunden sind.
@@ -273,7 +273,7 @@ Im Server-Teil der Anwendung wird eine reaktive Funktion verwendet, um die Pingu
     <td align="center">Shiny App UI</td>
   </tr>
   <tr>
-    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/Shiny%20App%20UI.png"></td>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/R/Shiny%20App%20UI.png"width="700"></td>
   </tr>
  </table>
    </p>
