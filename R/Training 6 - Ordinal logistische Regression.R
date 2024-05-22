@@ -1,7 +1,7 @@
 # Wine-Daten laden
 #install.packages("rattle")
 library(rattle)
-
+asd
 data(wine)
 
 # Deskriptive Statistik
