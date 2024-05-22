@@ -1,5 +1,5 @@
-CREATE DATABASE `universität`; 
-USE `universität`;
+CREATE DATABASE `uni`; 
+USE `uni`;
 
 -- Erstellung von Tabelle "Studierende"
 CREATE TABLE Studierende (
