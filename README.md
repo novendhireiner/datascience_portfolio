@@ -1,3 +1,18 @@
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Kaggle](https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
+![MYSQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![RStudio](https://img.shields.io/badge/RStudio-75AADB?style=for-the-badge&logo=RStudio&logoColor=white)
+
 Willkommen in meinem Data Science Portfolio auf GitHub! Hier präsentiere ich eine Zusammenstellung meiner eigenen Trainingsprojekte und Codebeispiele. Dieses Portfolio dient nicht nur als Schaufenster meiner Fähigkeiten, sondern auch als Nachweis meines Fortschritts und meiner Erfahrungen in diesem Bereich.
 
 # Inhalt
@@ -10,7 +25,7 @@ Dieses Portfolio richtet sich an potenzielle Arbeitgeber, Kollegen und die Data 
 Dieses Portfolio wird regelmäßig aktualisiert, wenn ich neue Projekte und Codebeispiele hinzufüge oder bestehende aktualisiere. Ich bin immer offen für Feedback und Anregungen zur Verbesserung meiner Arbeit. Wenn du Fragen zu meinen Projekten hast oder Vorschläge für zukünftige Projekte hast, zögere nicht, mir eine Nachricht zu senden oder einen Kommentar zu hinterlassen.
 
 # Hinweis
-Bitte beachte, dass die in diesem Portfolio präsentierten Projekte und Codebeispiele ausschließlich meine eigene Arbeit darstellen. Wenn du Teile meines Codes verwenden möchtest, kontaktiere mich bitte durch [![Linkedin](https://i.sstatic.net/gVE0j.png) LinkedIn](https://www.linkedin.com/in/nrmaturbongs), um eine Genehmigung zu erhalten.
+Bitte beachte, dass die in diesem Portfolio präsentierten Projekte und Codebeispiele ausschließlich meine eigene Arbeit darstellen. Wenn du Teile meines Codes verwenden möchtest, kontaktiere mich bitte durch [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nrmaturbongs), um eine Genehmigung zu erhalten.
 
 Vielen Dank, dass du mein Data Science-Portfolio besuchst! Ich hoffe, dass es dir gefällt und dir einen Einblick in meine Arbeit und meine Leidenschaft für Data Science bzw. Analyse gibt.
 
