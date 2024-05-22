@@ -3,7 +3,7 @@ data("ToothGrowth")
 
 # Überprüfen der Struktur des Datensatzes
 str(ToothGrowth)
-
+asd
 
 library(ggplot2)
 # Streudiagramm erstellen
