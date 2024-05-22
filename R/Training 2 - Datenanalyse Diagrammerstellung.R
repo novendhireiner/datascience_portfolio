@@ -2,7 +2,7 @@
 library(ggplot2)
 
 data(airquality)
-asdf
+
 ggplot(airquality, aes(x = Temp, y = Ozone, color = factor(Month))) +
   geom_point() +
   labs(x = "Temperatur", y = "Ozonkonzentration", color = "Monat") +
