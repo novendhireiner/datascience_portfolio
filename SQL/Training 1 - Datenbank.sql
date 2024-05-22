@@ -1,6 +1,6 @@
 
-CREATE DATABASE `firma`; 
-USE `firma`;
+CREATE DATABASE `firm`; 
+USE `firm`;
 
 SET NAMES utf8 ;
 SET character_set_client = utf8mb4 ;
