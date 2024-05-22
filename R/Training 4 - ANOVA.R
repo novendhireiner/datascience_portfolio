@@ -2,7 +2,7 @@
 library(dplyr)
 library(rstatix)
 data("Orthodont")
-asd
+
 descriptive_stats <- Orthodont %>%
   group_by(age) %>%
   summarise(
