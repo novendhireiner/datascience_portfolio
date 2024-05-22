@@ -2,7 +2,7 @@
 # Schritt 1: Laden des Datensatzes "airquality" und Datenreinigung
 data(airquality)
 airquality <- na.omit(airquality) 
-asdf
+
 # Schritt 2: Liniendiagramms mit ggplot2
 # install.packages("ggplot2")
 library(ggplot2)
