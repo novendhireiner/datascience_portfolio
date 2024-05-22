@@ -1,5 +1,5 @@
-CREATE DATABASE `firm`; 
-USE `firm`;
+CREATE DATABASE `firma`; 
+USE `firma`;
 
 -- Erstellung von Tabelle "Kunden"
 CREATE TABLE Kunden (
