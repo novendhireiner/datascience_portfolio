@@ -1,0 +1,4 @@
+libeccodes-dev
+libgeos-dev
+libnetcdf-dev
+libhdf5-dev
