@@ -127,6 +127,64 @@ Dann wird ein benutzerdefiniertes CNN-Modell namens BirdNet definiert, das aus m
 
 Während des Trainings werden Verluste berechnet und die Gewichte aktualisiert, und die Leistung des Modells wird auf dem Validierungsdatensatz überwacht. Nach Abschluss des Trainings wird die Entwicklung von Trainings- und Validierungsverlusten sowie die Validierungsgenauigkeit für jede Epoche angezeigt. Dieser Code bietet eine robuste Grundlage für das Training von CNNs zur Bildklassifizierung mit PyTorch.
    </p>
+
+   #### [Projekt 4 - Energiepreise Benchmarking Dashboard mit Streamlit](https://github.com/novendhireiner/datascience_portfolio/blob/main/Python/Projekt4_Streamlit_Energiepreise_Dashboard.py) 
+   <p align="justify">
+  Das Ziel dieses Projekts ist die Entwicklung eines interaktiven Dashboards, das die Energiepreise für private Haushalte in Deutschland von 2008 bis 2023 visualisiert und vergleicht. Das Dashboard soll es den Benutzern ermöglichen, die Preisentwicklung für verschiedene Energiequellen, Jahresverbrauchsklassen und Preisarten zu untersuchen. Die Anforderungen umfassen:
+
+* Laden und Visualisieren der Energiepreise für die Jahre 2008 bis 2023.
+* Auswahl und Filterung nach Energiequelle (Erdgas und Strom), Jahresverbrauchsklasse und Preisart.
+* Darstellung der Preisentwicklung über die Zeit in einem Liniendiagramm.
+* Bereitstellung einer Tabelle mit den gefilterten Daten zur weiteren Analyse.
+
+Die Daten für das Projekt wurden von der Website des [Statistischen Bundesamtes](destatis.de) heruntergeladen und umfassen zwei Energiequellen: Erdgas und Strom. Zunächst wird hier die Datenklassifikation kategorisiert :
+
+
+<table align="center">
+  <tr>
+    <td align="center">Jahresverbrauchsklassen</td>
+     <td align="center">Preisarten</td>
+  </tr>
+  <tr>
+    <td>
+      Erdgas:
+      <ul>
+          <li>Unter 5600 kWh</li>
+          <li>5600 bis unter 55600 kWh</li>
+          <li>55600 kWh und mehr</li>
+        </ul>
+      Strom:
+         <ul>
+          <li>1000 bis unter 2500 kWh</li>
+          <li>2500 bis unter 5000 kWh</li>
+          <li>5000 bis unter 15000 kWh</li>
+          <li>15000 kWh und mehr</li>
+        </ul>
+      </td>
+    <td valign="top">
+           <ul>
+          <li>Durchschnittspreise inkl. Steuern, Abgaben, Umlagen</li>
+          <li>Durchschnittspreise ohne Umsatzsteuer u.a. abz. Steuern</li>
+          <li>Durchschnittspreise ohne Steuern, Abgaben, Umlagen</li>
+        </ul>
+    </td>
+  </tr>
+ </table>
+
+
+Mit Streamlit wurde ein interaktives Dashboard entwickelt, das Benutzern ermöglicht, die Daten nach Energiequelle, Jahresverbrauchsklasse und Preisart zu filtern und die Preisentwicklung in einem Liniendiagramm zu visualisieren. Das Dashboard bietet auch eine Tabelle zur Anzeige der gefilterten Daten.
+
+
+<table align="center">
+  <tr>
+    <td align="center"> <a href="https://nrm-energiepreise-dashboard.streamlit.app">Energiepreise Benchmarking Dashboard @ Streamlit</a> </td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="https://github.com/novendhireiner/datascience_portfolio/blob/main/Python/Energiepreise-Dashboard.png"width="700"></td>
+  </tr>
+ </table>
+   </p>
+
 <hr>
 
 ## R
