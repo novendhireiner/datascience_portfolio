@@ -3,7 +3,7 @@ import plotly.express as px
 import streamlit as st
 
 # Daten Aufbereitung
-data = pd.read_excel('/app/datascience_portfolio/Python/Energiepreise an private Haushalt 2008-2023.xlsx')
+data = pd.read_excel("./datascience_portfolio/Python/Energiepreise an private Haushalt 2008-2023.xlsx")
 
 # Streamlit-Anwendung starten
 st.title("Energiepreise an private Haushalt von 2008 bis 2023 Benchmarking Dashboard")
