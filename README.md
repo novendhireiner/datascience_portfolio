@@ -352,7 +352,7 @@ In diesem Training präsentiere ich eine praxisorientierte Aufgabe zur Anwendung
 Diese Aufgabe illustriert die grundlegenden Konzepte der relationalen Datenbankgestaltung, wie die Definition von Primär- und Fremdschlüsseln sowie das Einfügen von Beispieldaten. Der SQL-Code zeigt die Erstellung der Datenbank und Tabellen, das Einfügen von Datensätzen und die Ausführung einer Abfrage, um spezifische Informationen abzurufen. Diese Struktur ermöglicht es, die Beziehungen zwischen Kunden und ihren Bestellungen zu verwalten und gezielte Datenabfragen durchzuführen, die wertvolle Einblicke in die Kundenbasis und deren Bestellverhalten bieten. Die Aufgabe demonstriert die Effizienz und Flexibilität von SQL bei der Verwaltung und Analyse von Unternehmensdaten.
    </p>
 
-#### [Training 3 - ER-Diagram]()   
+#### [Training 3 - ER-Diagram](https://github.com/novendhireiner/datascience_portfolio/blob/main/SQL/Training%203%20-%20ER-Diagramm.sql)   
    <p align="justify">
      <table align="center">
   <tr>
